@@ -16,4 +16,7 @@ include = ["src/**/*", "LICENSE", "Cargo.toml"]
 
 [dependencies]
 r2d2 = "0.8"
-redis = "0.16"
+
+[dependencies.redis]
+version = "0.16.0"
+features = ["r2d2", "tokio-rt-core", "connection-manager"]
